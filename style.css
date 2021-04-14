@@ -7,7 +7,8 @@
 }
 
 header {
-	background-image: url("bg.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+	/* background-image: url("bg.jpg"); */
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
@@ -21,6 +22,12 @@ nav .nav-name {
 	padding: 0 70px;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.nav-name2 {
+	text-decoration: none;
+	color: white;
+	margin-left: 50px;
 }
 
 nav ul {
@@ -45,4 +52,67 @@ ul a:hover {
 	background-color: rgba(255, 255, 255, 0.329);
 	color: white;
 	padding: 7px;
+}
+
+header .middle-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 420px;
+}
+
+.ad-word {
+	font-size: 94px;
+	font-weight: bold;
+}
+
+.ad-word2 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 40px;
+	color: white;
+}
+
+.call-to-action {
+	background: none;
+	border: 2px solid rgba(255, 255, 255, 0.719);
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 7px;
+}
+
+.button-anchor {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.call-to-action:hover {
+	background-color: rgba(255, 255, 255, 0.199);
+	transform: scale(1.1);
+}
+
+/* About section */
+
+.about {
+	text-align: center;
+	margin: 20px 0;
+	color: brown;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.first-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.first-container h3 {
+	font-size: 1.8em;
+	display: inline-block;
+	position: absolute;
 }
